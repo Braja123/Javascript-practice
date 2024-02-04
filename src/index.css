@@ -1,0 +1,75 @@
+
+.user_search_container {
+  display: flex;
+  position: relative
+}
+.user_search_input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.user_search_input input {
+  border: none;
+  height: 20px;
+  padding: 5px;
+}
+.user_search_input input:focus {
+  outline: none;
+}
+/* .suggestion_list li {
+  list-style: none;
+} */
+
+.suggestion_list {
+  max-height: 300px;
+  overflow-y: scroll;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid black;
+  margin-top: 6px;
+  border-top-left-radius: 10px;
+
+}
+
+.suggestion_list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+.suggestion_list li:last-child{
+  border-bottom: none;
+}
+.suggestion_list li:hover {
+  background-color: #ccc;
+}
+.suggestion_list img {
+  height: 20px;
+}
+
+.user_pill {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.user_pill img {
+  height: 100%;
+}
